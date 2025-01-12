@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.container {
+    padding: 20px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+.tab:last-child {
+    margin-right: 0;
+}
+.tab.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.content.active {
+    display: block;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.rental-card {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.rental-card:last-child {
+    border-bottom: none;
+}
+.rental-card h3 {
+    margin: 0;
+}
+.rental-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.tab {
+    /* tab link styles */
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    color: #007bff;
+    border: 1px solid transparent;
+  }
+  
+.tab.active,
+.tab:focus,
+.tab:hover {
+/* some hover/focus/active styling */
+background-color: #f0f0f0;
+}
+  
+/* If the link’s href matches the :target ID, style it: */
+:target ~ .tabs .tab[href="#previous"],
+:target ~ .tabs .tab[href="#current"],
+:target ~ .tabs .tab[href="#scheduled"],
+:target ~ .tabs .tab[href="#favourites"] {
+/* Not as straightforward with pure CSS. Another approach is needed 
+or a small JS if you want the link to highlight automatically. */
+  }
+  
+
+/* If there’s no :target in the URL, show the first content by default */
+.content {
+    display: none;
+  }
+
+  .content:target {
+    display: block;
+  }
+  
