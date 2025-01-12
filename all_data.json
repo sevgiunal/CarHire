@@ -1,0 +1,92 @@
+{
+    "user_name": "yavuz",
+    "orders": [
+        {
+            "id": "1",
+            "date": "12/09/2024",
+            "value": "101"
+        },
+        {
+            "id": "2",
+            "date": "15/08/2024",
+            "value": "105"
+        },
+        {
+            "id": "3",
+            "date": "21/09/2023",
+            "value": "99"
+        },
+        {
+            "id": "4",
+            "date": "01/11/2023",
+            "value": "95"
+        }
+    ],
+    "cars": [
+        {
+            "name": "Porsche GT3-RS",
+            "image_url": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/911/10998/Porsche-911-GT3-RS/1717681506245/front-left-side-47.jpg",
+            "description": "Fast and reliable.",
+            "Price": "Starting at $100/day."
+        },
+        {
+            "name": "Ford Mustang",
+            "image_url": "https://images.prismic.io/carwow/c2d2e740-99e2-4faf-8cfa-b5a75c5037c0_ford-mustang-2024-lhd-front34static.jpg?auto=format&cs=tinysrgb&fit=crop&q=60&w=750",
+            "description": "Power and Style",
+            "Price": "Starting at $80/day."
+        },        
+        {
+            "name": "Mercedes G Wagon",
+            "image_url":"https://www.weddingcarsforhire.com/wp-content/uploads/2023/10/DSC_0329-scaled.jpg",
+            "description": "Luxurious, Spacious and comfortable, ideal for road trips.",
+            "Price": "Starting at $70/day."
+        },
+        {
+            "name": "Aston Martin Vantage",
+            "image_url":"https://www.weddingcarsforhire.com/wp-content/uploads/2023/10/DSC_0329-scaled.jpg",
+            "description": "Luxurious, and Fast.",
+            "Price": "Starting at $90/day."
+        }
+    ],
+    "rentals":[
+        {
+            "name": "Toyota Corolla",
+            "price": "$210",
+            "rental_period": "Jan 1 2024 - Jan 7 2024"       
+        },
+        {
+            "name": "Ford Mustang",
+            "price": "$400",
+            "rental_period": "Dec 1 2024 - Dec 8 2024"       
+        }
+    ],
+    "currentrentals":[
+        {
+            "name": "Honda CRV",
+            "price": "$400",
+            "rental_period": "Jan 1 2025 - Feb 8 2024"  
+        }
+    ],
+    "scheduledrentals":[
+        {
+            "name": "Aston Martin Vantage",
+            "price": "$700",
+            "rental_period": "Jan 1 2024 - Feb 8 2024"       
+
+        }
+    ],
+    "favourites":[
+        {
+            
+            "name": "BMW X5",
+            "price": "$120",
+            "description": "Luxurious, and Fast." 
+        },
+        {
+            
+            "name": "Tesla Model 3",
+            "price": "$100",
+            "description": "Electric and eco-friendly" 
+        }        
+    ]
+}
