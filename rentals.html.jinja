@@ -1,0 +1,80 @@
+{% extends "partials/base.jinja" %}
+
+{% block title %}Rentals{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/style/rentals.css">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Rentals</h1>
+</header>
+
+<div class="container">
+    <div class="tabs">
+        <a href="#previous" class="tab">Previous Rentals</a>
+        <a href="#current" class="tab">Current Rentals</a>
+        <a href="#scheduled" class="tab">Scheduled Rentals</a>
+        <a href="#favourites" class="tab">Favourites</a>
+    </div>
+
+    <!-- Previous Rentals -->
+    <div id="previous" class="content">
+        <h2>Previous Rentals</h2>
+        {% for item in rentals %}
+        <div class="rental-card">
+            <div>
+                <h3>{{ item.name }}</h3>
+                <p>Rental Period: {{ item.rental_period }}</p>
+            </div>
+            <p>{{ item.price }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Current Rentals -->
+    <div id="current" class="content">
+        <h2>Current Rentals</h2>
+        {% for item in currentrentals %}
+        <div class="rental-card">
+            <div>
+                <h3>{{ item.name }}</h3>
+                <p>Rental Period: {{ item.rental_period }}</p>
+            </div>
+            <p>{{ item.price }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Scheduled Rentals -->
+    <div id="scheduled" class="content">
+        <h2>Scheduled Rentals</h2>
+        {% for item in scheduledrentals %}
+        <div class="rental-card">
+            <div>
+                <h3>{{ item.name }}</h3>
+                <p>Rental Period: {{ item.rental_period }}</p>
+            </div>
+            <p>{{ item.price }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Favourites: static sample -->
+    <div id="favourites" class="content">
+        <h2>Favourites</h2>
+        {% for item in favourites %}
+        <div class="rental-card">
+            <div>
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+            <p>Starting at {{ item.price }}/day</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
