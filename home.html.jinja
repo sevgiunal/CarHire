@@ -1,0 +1,32 @@
+{% extends "/partials/base.jinja" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/style/home.css">
+{% endblock %}
+
+
+{% block content %}
+<header>
+    <h1>Welcome to Car Rentals</h1>
+</header>
+
+
+<div class="container">
+    <h2 style="text-align: center;">Available Vehicles Globally</h2>
+    <div class="row">
+        {% for car in cars %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{{ car.image_url }}" class="card-img-top" alt="{{ car.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ car.name }}</h5>
+                    <p class="card-text">{{ car.description }}</p>
+                    <p class="card-text"><strong>{{ car.Price }}</strong></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
