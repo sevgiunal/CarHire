@@ -1,0 +1,139 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background-color: #007bff; 
+    color: white;             
+    text-align: center;
+    padding: 15px;             
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;  /* Slightly larger from second snippet */
+}
+
+/* CONTAINER */
+.container {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px; /* Center container from second snippet */
+    margin: 0 auto;
+}
+
+/* HEADINGS */
+h2 {
+    margin: 20px 0;
+    font-size: 1.8rem; /* From first snippet (slightly smaller than second’s 2rem) */
+    font-weight: bold;
+    color: #333;       /* From first snippet */
+    text-align: center;
+    /* Remove the text-shadow for a cleaner look (feel free to add it back) */
+}
+
+/* WELCOME CONTAINER (From first snippet, if you still use it) */
+.welcome-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FLEX ROW (Cards layout) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Center the cards if you like */
+}
+
+/* CARD WRAPPER */
+.card {
+    background: white;
+    border: none; /* From first snippet (no border) */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* From first snippet */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effect from second snippet */
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+/* CARD IMAGE */
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd; /* Optional from second snippet */
+    border-radius: 8px 8px 0 0;    /* Round the top edges to match the card radius */
+}
+
+/* CARD BODY */
+.card-body {
+    padding: 15px;
+}
+
+/* CARD TITLE */
+.card-title {
+    font-size: 1.2rem;      /* Slightly bigger than first snippet’s default */
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #007bff;         /* Keep the “eye-catching” brand color from first snippet */
+}
+
+/* CARD TEXT */
+.card-text {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.card-text strong {
+    color: #000;
+    font-size: 1rem;
+}
+
+/* CAR-CARD (If you still have an older .car-card structure) */
+.car-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.car-card img {
+    max-width: 100px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+.car-card div {
+    flex: 1;
+}
+.car-card a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+.car-card a:hover {
+    text-decoration: underline;
+}
+.car-card p {
+    margin: 5px 0 0;
+}
